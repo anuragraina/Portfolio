@@ -1,14 +1,6 @@
 import React from 'react';
 
-//import vmarine
-import vmarine from "../img/Vmarine.jpg";
-import vmarine1 from "../img/vmarine-1.png";
-import vmarine2 from "../img/vmarine-2.png";
-import vmarine3 from "../img/vmarine-3.png";
-import vmarine4 from "../img/vmarine-4.png";
-import vmarine5 from "../img/vmarine-5.png";
-import vmarine6 from "../img/vmarine-6.png";
-import vmarine7 from "../img/vmarine-7.png";
+import Chatbook from "../img/chatbook.jpg"
 
 //aguadeluz pics
 import aguaDeLuz from "../img/aguaDeLuz.png";
@@ -57,36 +49,40 @@ class Portfolio extends React.Component{
               </div>
               <div className="row">
                 <div className="col-md-4">
-                  <div className="work-box">
-                    <a href={vmarine} data-lightbox="gallery-vmarine">
-                      <div className="work-img">
-                        <img src={vmarine} alt="" className="img-fluid"/>
-                      </div>
-                      <div className="work-content">
-                        <div className="row">
-                          <div className="col-sm-8">
-                            <h2 className="w-title">Vmarine</h2>
-                            <div className="w-more">
-                              <span className="w-ctegory">HTML5  CSS3  Bootstrap  Webpack  Wordpress  MySQL  ReactJS</span> {/*/ <span className="w-date">18 Sep. 2018</span>*/}
-                            </div>
-                          </div>
-                          <div className="col-sm-4">
-                            <div className="w-like">
-                              <span className="ion-ios-plus-outline"></span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      </a>
-                      <a href={vmarine1} data-lightbox="gallery-vmarine" style={{display: "none"}}>jsx-a11y/anchor-has-content warning</a>
-                      <a href={vmarine2} data-lightbox="gallery-vmarine" style={{display: "none"}}>jsx-a11y/anchor-has-content warning</a>
-                      <a href={vmarine3} data-lightbox="gallery-vmarine" style={{display: "none"}}>jsx-a11y/anchor-has-content warning</a>
-                      <a href={vmarine4} data-lightbox="gallery-vmarine" style={{display: "none"}}>jsx-a11y/anchor-has-content warning</a>
-                      <a href={vmarine5} data-lightbox="gallery-vmarine" style={{display: "none"}}>jsx-a11y/anchor-has-content warning</a>
-                      <a href={vmarine6} data-lightbox="gallery-vmarine" style={{display: "none"}}>jsx-a11y/anchor-has-content warning</a>
-                      <a href={vmarine7} data-lightbox="gallery-vmarine" style={{display: "none"}}>jsx-a11y/anchor-has-content warning</a>
+                <div className="work-box" data-toggle="modal" data-target="#chatbook">
+                  <div className="work-img">
+                    <img className="card-img-top" src={Chatbook} alt="Chatbook"/>
+                  </div>
+                  <div className="card-body">
+                    <h5 className="card-title">Chatbook (Ongoing)</h5>
+                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                 </div>
+                </div>
+
+                {/* -- Modal -- */}
+                <div class="modal fade" id="chatbook" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-centered" role="document">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                       <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                       </button>
+                     </div>
+                     <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
                 <div className="col-md-4">
                   <div className="work-box">
                     <a href={aguaDeLuz} data-lightbox="gallery-aguadeluz">
