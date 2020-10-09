@@ -4,7 +4,7 @@ import '../libs/easing.js';
 
 class BackToTop extends React.Component {
 	componentDidMount() {
-		$('.back-to-top').click(function () {
+		$('.back-to-top').click(() => {
 			$('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
 			return false;
 		});
