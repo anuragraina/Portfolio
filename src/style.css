@@ -754,7 +754,11 @@ PORTFOLIO
 }
 
 .modal-footer {
-	justify-content: flex-start;
+	justify-content: space-between;
+}
+
+.link {
+	margin: 0 1rem;
 }
 
 /*
