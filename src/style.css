@@ -700,7 +700,6 @@ PORTFOLIO
 	margin-bottom: 3rem;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	background-color: #fff;
 	cursor: pointer;
 }
 
@@ -747,6 +746,15 @@ PORTFOLIO
 
 .w-title {
 	font-size: 1.2rem;
+}
+
+.project-details {
+	margin-top: 2rem;
+	font-size: 1.25rem;
+}
+
+.modal-footer {
+	justify-content: flex-start;
 }
 
 /*
