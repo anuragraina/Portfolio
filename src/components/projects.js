@@ -84,7 +84,7 @@ const project = [
         description:[
             'A simple notes management app developed on Material UI',
             'Completely Front-End and using local storage to save notes',
-            'Complete functionality of CRUD operations',
+            'All CRUD operations functional',
             'Technologies used: ReactJs, Material UI'
         ],
         link: 'https://notes-manager.netlify.app/',

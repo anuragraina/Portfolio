@@ -19,11 +19,7 @@ class Intro extends React.Component {
 								<span className='text-slider-items'></span>
 								<strong className='text-slider'>
 									<Typed
-										strings={[
-											'Front End Developer',
-											'Back End Developer',
-											'Software Engineer',
-										]}
+										strings={['Full Stack Developer', 'Software Engineer']}
 										typeSpeed={80}
 										backDelay={1100}
 										backSpeed={30}
@@ -32,11 +28,7 @@ class Intro extends React.Component {
 								</strong>
 							</p>
 							<p className='pt-3'>
-								<a
-									className='btn btn-primary btn js-scroll px-4'
-									href='#about'
-									role='button'
-								>
+								<a className='btn btn-primary btn js-scroll px-4' href='#about' role='button'>
 									View My Work
 								</a>
 							</p>
