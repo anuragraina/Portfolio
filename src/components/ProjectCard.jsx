@@ -1,9 +1,5 @@
 import React from 'react';
 
-import Chatbook1 from '../img/chatbook1.jpg';
-import Chatbook2 from '../img/chatbook2.jpg';
-import Chatbook3 from '../img/chatbook3.jpg';
-
 export default function ProjectCard(props) {
 	const { project } = props;
 	return (
@@ -11,7 +7,7 @@ export default function ProjectCard(props) {
 			<div className='col-md-4'>
 				<div className='work-box card' data-toggle='modal' data-target={'#' + project.name}>
 					<div className='work-img'>
-						<img className='card-img-top h-100' src={project.images[0]} alt={project.name} />
+						<img className='card-img-top' src={project.images[0]} alt={project.name} />
 					</div>
 					<div className='card-body'>
 						<h5 className='card-title'>{project.title}</h5>
@@ -42,6 +38,7 @@ export default function ProjectCard(props) {
 
 						<div className='modal-body'>
 							{project.images.length > 1 ? (
+								//Edit this later to make carousel more dynamic
 								<div id='chatbookCarousel' className='carousel slide' data-ride='carousel'>
 									<ol className='carousel-indicators'>
 										<li data-target='#chatbookCarousel' data-slide-to='0' className='active' />
@@ -50,13 +47,13 @@ export default function ProjectCard(props) {
 									</ol>
 									<div className='carousel-inner'>
 										<div className='carousel-item active'>
-											<img className='d-block w-100' src={Chatbook1} alt='First slide' />
+											<img className='d-block w-100' src={project.images[0]} alt='First slide' />
 										</div>
 										<div className='carousel-item'>
-											<img className='d-block w-100' src={Chatbook2} alt='Second slide' />
+											<img className='d-block w-100' src={project.images[1]} alt='Second slide' />
 										</div>
 										<div className='carousel-item'>
-											<img className='d-block w-100' src={Chatbook3} alt='Third slide' />
+											<img className='d-block w-100' src={project.images[2]} alt='Third slide' />
 										</div>
 									</div>
 									<a
