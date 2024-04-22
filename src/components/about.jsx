@@ -8,7 +8,7 @@ class About extends React.Component {
 			aboutMe: [
 				{
 					id: 'first-p-about',
-					content: 'I am a Computer Science undergrad graduating in 2021.',
+					content: 'I am a Full Stack Developer.',
 				},
 				{
 					id: 'second-p-about',
@@ -33,7 +33,11 @@ class About extends React.Component {
 							<div className='box-shadow-full'>
 								<div className='row'>
 									<div className='col-md-4 image-div'>
-										<img src={myImage} className='img-fluid rounded b-shadow-a' alt='Profile' />
+										<img
+											src={myImage}
+											className='img-fluid rounded b-shadow-a'
+											alt='Profile'
+										/>
 									</div>
 									<div className='col-md-8'>
 										<div className='about-me pt-4 pt-md-0'>
